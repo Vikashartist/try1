@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+</head>
+<body>
+    <h1>Image Upload Gallery</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" name="image" required />
+        <button type="submit">Upload</button>
+    </form>
+
+    <div id="gallery"></div>
+
+    <script>
+        async function fetchImages() {
+            const response = await fetch('/images');
+            const images = await response.json();
+
+            const gallery = document.getElementById('gallery');
+            gallery.innerHTML = '';
+            images.forEach(image => {
+                gallery.innerHTML += `
+                    <div>
+                        <img src="${image.path}" alt="Image" width="200">
+                        <p>Uploaded on: ${new Date(image.uploadDate).toLocaleString()}</p>
+                        <button onclick="downloadImage('${image.path}')">Download</button>
+                        <button onclick="deleteImage(${image.id})">Delete</button>
+                    </div>
+                `;
+            });
+        }
+
+        async function uploadImage(event) {
+            event.preventDefault();
+            const formData = new FormData(document.getElementById('uploadForm'));
+            await fetch('/upload', { method: 'POST', body: formData });
+            fetchImages();
+        }
+
+        async function downloadImage(path) {
+            window.open(path, '_blank');
+        }
+
+        async function deleteImage(id) {
+            await fetch(`/delete/${id}`, { method: 'DELETE' });
+            fetchImages();
+        }
+
+        document.getElementById('uploadForm').addEventListener('submit', uploadImage);
+        fetchImages();
+    </script>
+</body>
+</html>
