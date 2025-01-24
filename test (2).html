@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="theme-color" content="black"> -->
+  <title>Document</title>
+<!--   space mono links -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Special+Elite&display=swap" rel="stylesheet">  
+  
+  
+<!--   icons links -->
+<script src="https://kit.fontawesome.com/052dd7987c.js" crossorigin="anonymous"></script>
+  
+  
+<!-- 
+  roboto font links  -->
+ <!-- for the arrow icons --> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=play_arrow" />
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+
+
+
+  <!-- bold fonts links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+
+
+
+  <!-- marvel links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+
+  <!-- this link is for poppins fonts -->
+
+   <!-- this link is for space grotesk -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="main-txt-cont.css">
+
+</head>
+<style>
+
+  *{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+
+  }
+  .main-page{
+    background-image:url("Security image.jpg");
+    width:100%;
+    height:560px;
+    background-position:center;
+    filter:brightness(60%);
+    /* filter:saturate(140%); */
+    position:absolute;
+
+
+}
+.navbar{
+  width:100%;
+  height:52px;
+  background-color:transparent;
+  border:1px solid rgb(43, 43, 43);
+  position:relative;
+  z-index:1;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  position: fixed;
+  top: 0;
+  transition: backdrop-filter 0.3s, background-color 0.3s;
+
+  /* filter:blur(5px); */
+}
+
+.navbar.blur {
+    backdrop-filter: blur(6px);
+    /* background-color: rgba(51, 51, 51, 0.8); */
+}
+.sub-bar{
+  
+  margin-left:60px;
+  margin-right:60px;
+  background-color:red;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  
+
+}
+
+/* the inner logo sect*/
+.nlogo{
+  width:40px;
+  height:40px;
+  background-color:red;
+  margin-left:10px;
+  border-radius:50%;
+  background-image:url("final logo.jpeg");
+  background-position:center;
+  background-size:cover;
+
+}
+.logo-txt{
+  /* width:200px; */
+  height:30px;
+  background-color:transparent;
+  margin-left:4px;
+  margin-right:10px;
+  color:white;
+  display:flex;
+  align-items:center;
+  /* justify-content:center; */
+  padding-left:4px;
+  font-family: "Space Grotesk", serif;
+  font-size:14px;
+}
+.main-navbar{
+ 
+  
+  
+}
+#logo-section{
+  /* width:200px; */
+  height:46px;
+  background-color:transparent;
+  
+}
+
+#more-cont-section{
+  /* width:400px; */
+  height:46px;
+  background-color:transparent;
+  
+  
+}
+.more-cont{
+ 
+ margin-left:26px;
+ background-color:transparent;
+ font-family: "Space Grotesk", serif;
+ font-size:14px;
+}
+#contact{
+  background-color:#24cfa6;
+  color:black;
+  margin:10px;
+  margin-left:20px;
+  padding:4px 8px;
+  /* font-family: "Poppins", serif; */
+  font-family: "Space Grotesk", serif;
+  font-weight:500;
+  font-size:"10px";
+  border-radius:3px;
+}
+#contact:hover{
+  color:black;
+  background-color:#2cb494;
+
+}
+#explore{
+  color:white;
+}
+#explore:hover{
+  color:white;
+  font-weight:500;
+  cursor:pointer;
+}
+#aboutus{
+  color:white;
+}
+#aboutus:hover{
+  color:white;
+  font-weight:500;
+  cursor:pointer;
+}
+#Documentation{
+  color:white;
+}
+#Documentation:hover{
+  color:white;
+  font-weight:500;
+  cursor:pointer;
+}
+
+
+
+/* cover-section css */
+.cover-section{
+  width:100%;
+  height:506px;
+  background-color:transparent;
+  position:relative;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+
+}
+
+
+
+
+@keyframes blink {
+            from {
+                border-color: transparent;
+            }
+            to {
+                border-color: black;
+            }
+        }
+        
+        
+        
+        
+        
+        
+/*         main-cont css */
+.main-txt-cont{
+    background-color:transparent;
+    width:80%;
+    height:300px;
+    color:white;
+    position:relative;
+    margin-bottom:40px;
+
+
+}
+.main-txt{
+
+}
+.future{
+    font-size:72px;
+    font-family: "Source Sans 3", serif;
+    font-weight:bold;
+    letter-spacing:0px;
+    text-transform:uppercase;
+    width:100%;
+    /* border:1px solid rgb(66, 66, 66); */
+    padding:0px;
+    line-height:58px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}   
+.the{
+    font-size:26px; 
+    /* border:1px solid rgb(61, 61, 61); */
+    letter-spacing:1px;
+    display:flex;
+    align-items:center;
+    justify-content:left;
+    padding-left:15%;
+    font-weight:bold;
+    font-family: "Poppins", serif;
+
+}
+.simple{
+    width:100%;
+    height:44px;
+    border:1px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: blink 0.5s step-end infinite alternate;
+    font-size:40px;
+    /* border:1px solid rgb(87, 87, 87); */
+    background-color:transparent;
+    font-weight:400px;
+    display:flex;
+    align-items:center;
+    justify-content:left;
+    padding-left:15%;
+    font-family: "Roboto", serif;
+    color:#32FF57;
+}
+#secured-txt{
+    color:blue;
+}
+
+
+.main-desc{
+    width:100%;
+    height:60px;
+  background-color:transparent;
+    margin-top:0px;
+    display:flex;
+    align-items:center;
+    justify-content:end;
+    
+    
+    
+}
+.main-dec-txt{
+    width:320px;
+    color:white;
+    line-height:14px;
+    font-family: "Roboto", serif;
+    font-size:12px;
+    
+}
+.simple{
+
+}
+.highlightg{
+    color:rgb(0, 255, 0);
+    font-weight:bold;
+}
+#highlightr{
+    color:yellow;
+    font-weight:bold;
+}
+   
+   
+   /* section of main-btn container   */ 
+   .main-btn-cont{
+     width:100%;
+     height:44px;
+     background-color:transparent;
+     margin-top:-22px;
+     display:flex;
+     padding-left:200px;
+     /* justify-content:first; */
+     }
+   .btn-sub{
+     /* width:100px; */
+     height:40px;
+     background-color:#1E90FF;
+     color:#FFFFFF;
+     font-size:18px;
+     font-weight:bold;
+     padding:6px 14px;
+     margin-left:14px;
+     text-align:center;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     border-radius:4px;
+     
+     font-family: "Space Grotesk", serif;
+     
+   }
+  #login{
+    /*  background-color:rgb(0, 255, 0); */
+     background-color:#32CD32;
+     color:white;
+     font-weight:bold;
+     border:1px solid #003366;
+     text-shadow: 2px 2px 2px green;
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+     user-select:none;
+     
+    
+   }
+   #login:hover {
+   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 40px rgba(0, 255, 0, 0.8);
+ }
+   #quick-start{
+   padding-left:2px;
+   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+   }
+   .material-symbols-outlined{
+     color:white;
+   }
+   
+   .fa-play{
+     padding-left:8px;
+     padding-right:8px;
+   }
+   
+   
+   
+   .mov-txt-cont{
+     width:100%;
+     color:#ff8080;
+     text-align:center;
+     font-weight:bold;
+     height:36px;
+     background-color:#451c1c;
+     position:absolute;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     text-transform:capitalize;
+     font-size:14px;
+   }
+   
+   
+   
+ /*   body-section css  */
+ .body-section {
+   
+  width: 100%;
+  height: 506px;
+  background-color: black;
+  position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+
+  /* position: absolute; */
+}
+ 
+ 
+ 
+.body-sub-section{
+  width:140px;
+  height:140px;
+  border-top-right-radius:50%;
+  border-bottom-left-radius:50%;
+/* margin-top:200px; */
+
+/*   background-color:black; */
+background-color:#1e8ffd;
+
+  /* animation:glow 2.3s ease-in-out infinite; */
+  filter:blur(100px);
+  /*  filter:blur(50px); */
+  
+  
+}
+.body-sub-section1{
+  width:140px;
+  height:140px;
+  border-top-right-radius:50%;
+  border-bottom-left-radius:50%;
+  background-color:rgba(45,255,196);
+  
+/* animation:glow 2.3s ease-in-out infinite; */
+filter:blur(90px);
+ /*  filter:blur(50px); */
+  
+}
+.blur-glow-3{
+  width:140px;
+  height:140px;
+  border-top-right-radius:50%;
+  border-bottom-left-radius:50%;
+  background-color:#dd0000;
+  position:absolute;
+
+  top:0;
+  left:0;
+  
+  
+/* animation:glow 2.3s ease-in-out infinite; */
+filter:blur(160px);
+
+ /*  filter:blur(50px); */
+  
+}
+.blur-glow-4{
+  width:140px;
+  height:140px;
+  border-top-right-radius:50%;
+  border-bottom-left-radius:50%;
+  background-color:green;
+  position:absolute;
+
+  top:70%;
+  left:90%;
+  
+  
+/* animation:glow 2.3s ease-in-out infinite; */
+filter:blur(110px);
+
+ /*  filter:blur(50px); */
+  
+}
+
+
+.explore-section{
+  width:90%;
+  height:400px;
+  background-color:black;
+  overflow:hidden;
+/*   border:4px solid grey; */
+  border-radius:12px;
+  position:absolute;
+  overflow:hidden;
+  border-left:1px solid ;
+  /* margin-left:100px; */
+ /*  position:relative; */
+  
+
+}
+
+.#main-efx{
+  
+}
+@keyframes glow {
+            from {
+                background-color:green;
+                margin-left:0;
+            }
+            to {
+                background-color:blue;
+            /*  margin-left:10px; */
+            }
+        }
+        
+        
+        
+        
+        
+      /*   CSS of explore section */
+ 
+      
+      
+      
+      
+      
+      
+      .explore-title{
+        width:100%;
+       background-color:black;
+       color:white;
+       font-weight:bold;
+       font-size:22px;
+       padding-left:24px;
+       padding-top:8px;
+       padding-bottom:8px;
+       display:flex;
+       font-family: "Montserrat", serif;
+      }
+      .explore-dec{
+        width:100%;
+    /*  font-family: "Space Grotesk", serif; */
+        color:white;
+         background-color:black;
+ color:white;
+font-size:14px;
+ padding-left:24px;
+ padding-top:8px;
+ padding-bottom:8px;
+      }
+      
+      
+         #textContainer {
+            
+             transition: opacity 0.6s ease-in; 
+        }
+        .highlight {
+           font-weight:;
+            /* display: inline-block; */
+            opacity: 0;
+            transition: opacity 0.9s ease-in;
+        }
+      
+  
+  
+
+
+  #dmodel {
+    width: 100px;
+    height: 110px;
+/*     position:fixed; */
+    position:relative;
+    
+/*     margin-left: 100px; */
+  /*   border: 2px solid red; */
+  }
+
+
+
+
+.into-div-cont{
+  width:100%;
+  height:286px;
+  /* height:400px */;
+  background-color:black;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:10px;
+ user-select:none;
+
+}
+.into-sub-cont{
+
+
+}
+#into-sub-cont1{
+  padding-left:20px;
+  text-align:left;
+  line-height:20px;
+  width:60%;
+  height:286px;
+/*   border:1px solid blue; */
+  color :#c4ceda;
+  font-size:14px;
+  background-color:black;
+ 
+}
+#into-sub-cont2{
+width:40%;
+height:286px;
+  position:relative;
+ border-radius:4px;
+  background-color:black;
+  overflow:hidden;
+  
+
+}
+    
+    #scanvd{
+      width:100%;
+      padding:-20px;
+     transform:scale(1.23);
+     border:1px solid white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+     
+    
+    }
+    .over-lap{
+      width:100px;
+     
+      /* background: linear-gradient(90deg, #32CD32, #7CFC00); */
+      color:white;
+    
+      position:absolute;
+      top:90%;
+      left:70%;
+      text-align:center;
+      text-transform:capitalize;
+      letter-spacing:1px;
+      font-weight:bold;
+      font-size:22px;
+      color:;
+     filter:blur(0px);
+    }
+    
+    
+
+
+
+
+
+
+
+
+
+    .card {
+     
+     
+      background-color: #222;
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(255, 255, 255, 0.5), transparent);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    .card[data-color="red"]::before {
+      background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(255, 0, 0, 0.5), transparent);
+    }
+
+    .card[data-color="green"]::before {
+      background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(0, 255, 0, 0.5), transparent);
+    }
+
+    .card[data-color="blue"]::before {
+      background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(0, 186, 255, 0.5), transparent);
+      
+    }
+    .card[data-color="white"]::before {
+      background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(255, 255, 255, 0.2) 10%, transparent 50%);
+      
+    }
+
+    .card:hover {
+      transform: scale(1.005);
+    }
+
+    .card:hover::before {
+      opacity: 1;
+    } 
+    
+    
+    
+    
+    
+    
+    
+    .intro-know-more{
+      color:white;
+    
+     
+      font-weight:bold;
+      display:flex;
+     
+      font-size:12px;
+      align-items:center;
+      justify:content:center;
+      text-decoration:none;
+      margin-top:12px;
+      width:120px;
+      transition:0.3s ease-in;
+     
+    }
+    .intro-know-more:hover{
+      font-weight:bold;
+      transition:0.3s ease-in;
+    }
+    .intro-know-more a{
+      text-decoration:none;
+      color:white;
+    }
+    
+</style>
+<body>
+  <div class="main-page">
+<div class="body-sub-section1" id="main-efx"></div>
+  </div>
+  <div class="navbar">
+
+    <div id="logo-section" class="sub-bar">
+      <div class="nlogo"></div>
+      <div class="logo-txt">The Future of Attendance</div>
+    </div>
+    <div id="more-cont-section" class="sub-bar">
+      <div id="explore" class="more-cont">Explore</div>
+      <div id="aboutus" class="more-cont">About us</div>
+      <div id="Documentation" class="more-cont">Documentation</div>
+      <div id="contact" class="more-cont">Contact</div>
+    </div>
+    <!-- <div class="main-navbar"></div> -->
+  </div>
+  
+<div class="cover-section">
+  <div class="main-txt-cont">
+    <div class="main-txt">
+      <div class="the">The</div>
+      <div class="future">Future of Attendance</div>
+      <div class="simple" id="">
+        <div class="simple2" id="typing">Secured</div>
+        <!-- <span id="secured-txt" id="typing">Secured</span> -->
+      </div>
+    </div>
+    <div class="main-desc"><model-viewer src="/futuristic_flying_animated_robot_-_low_poly.glb" id="dmodel" autoplay camera-controls disabled-zoom autoroate shadow-intensity="1"></model-viewer>
+      <div class="main-dec-txt"> Experience the <span class="highlightg"> Next generation of attendance systems with cutting-edge technology </span > that ensures <span class="highlightg"></span > security , efficiency and peace of mind. <span id="highlightr">Unlock the future</span>  today with innovative solutions <span class="highlightg">designed for modern needs </span>.</div>
+      <!-- <span></span> -->
+      
+  <div class="body-sub-section" id="main-efx">body sub</div>
+    </div>
+    
+    <div class="main-btn-cont">
+    <div class="btn-sub" id="quick-start">
+      <!--   <span class="material-symbols-outlined">
+        play_arrow
+      </span> -->
+   <i class="fa-solid fa-play"></i>   
+Quick Start  
+        </div>
+        <div class="btn-sub card" id="login">
+          Login
+        </div>
+    </div>
+  </div>
+<div class="mov-txt-cont">
+  <marquee behavior="alternate" direction="left">Website Under Development !  Website Under Development !  Website Under Development !  Website Under Development !  Website Under Development !  Website Under Development !  Website Under Development !  Website Under Development !  Website Under Development !  Website Under Development !  Website Under Development !</marquee>
+  
+</div>
+</div>
+<div class="body-section">
+    
+  
+ <div class="blur-glow-3">body sub</div>  
+ <div class="blur-glow-3">body sub</div> 
+  <div class="blur-glow-4">body sub</div> 
+  <div class="blur-glow-4">body sub</div> 
+
+  <div class="explore-section card" data-color="white">
+      <div class="explore-title" id="exploreWord">
+  What is  The Future of Attendance  ?
+<!--   What is   <span class="highlightg"> The Future of Attendance </span> ? -->
+      </div>
+      <div class="explore-dec" id="textContainer">
+       The future of attendance systems is likely to be shaped by advancements in technology, focusing on efficiency, accuracy, and user experience. Here are some key trends and innovations expected in the future:
+      </div>
+     <div class="into-div-cont">
+         <div class="into-sub-cont" id="into-sub-cont1">
+         <!--   The future of attendance lies in embracing cutting-edge technologies that ensure accuracy, convenience, and security. Traditional methods, such as manual sign-ins or card swipes, are becoming outdated. With advancements in facial recognition technology, we are moving towards a seamless, automated process that not only enhances efficiency but also eliminates the risk of errors or fraud. -->
+
+Face recognition-based attendance systems offer unparalleled ease of use, where employees, students, or participants simply walk in front of a camera to mark their attendance. This reduces administrative work, ensures reliable tracking, and provides a transparent, tamper-proof record. As AI and machine learning continue to evolve, these systems will only get smarter, capable of integrating with other tools for better productivity and compliance monitoring. The future of attendance is all about a more connected, efficient, and secure way of managing time and presence.
+      <div class="intro-know-more">
+        <a href="#">Read More</a>
+      </div>
+      
+           
+         </div>
+         <div class="into-sub-cont" id="into-sub-cont2">
+             <video autoplay muted loop id="scanvd">
+    <source src="/Futuristic Face Recognition Attendance System-VEED (1) - Trim.mp4" type="video/mp4">
+
+  </video>
+         </div>
+         <div class="over-lap">
+           verified
+         </div>
+              
+            
+
+
+          <!--  <video src="/Futuristic Face Recognition Attendance System-VEED (1) - Trim.mp4" height="300px" width="" preload="none" autoplay="autoplay" loop id="scanvd"></video> -->
+
+         </div>
+     </div>
+  </div>
+  
+
+ <!-- <div class="body-sub-section">body sub</div>
+ <div class="body-sub-section1">body sub</div>
+ </div>
+ 
+  <div class="explore-section">
+   explore
+ </div> -->
+
+</div>
+<div class="body-section">
+    
+  
+ <div class="blur-glow-3">body sub</div>  
+ <div class="blur-glow-3">body sub</div> 
+  <div class="blur-glow-4">body sub</div> 
+  <div class="blur-glow-4">body sub</div> 
+
+  <div class="explore-section">
+      <div class="explore-title" id="exploreWord">
+   Explore
+      </div>
+      <div class="explore-dec" id="textContainer">
+        Explore a smarter way to manage attendance with our Face Recognition System. Using a Face Recognition API in JavaScript, our system processes live video input to quickly and accurately identify individuals in real-time. Simplify attendance tracking, enhance security, and save time. Discover how this innovative technology can transform your organization's attendance process today!
+      </div>
+  </div>
+  
+
+ <!-- <div class="body-sub-section">body sub</div>
+ <div class="body-sub-section1">body sub</div>
+ </div>
+ 
+  <div class="explore-section">
+   explore
+ </div> -->
+
+
+</div>
+<!-- for loading lazy -->
+<!-- <video class="lazy-video" muted loop>
+  <source data-src="video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video> -->
+
+<script>
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      card.style.setProperty('--x', `${x}%`);
+      card.style.setProperty('--y', `${y}%`);
+    });
+  });
+</script>
+
+<!-- writting effect of the text -->
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const videos = document.querySelectorAll("into-sub-cont2");
+
+    const lazyLoadVideo = (video) => {
+      const source = video.querySelector("source");
+      if (source && source.dataset.src) {
+        source.src = source.dataset.src; // Set the actual video source
+        video.load(); // Load the video
+        alert("working");
+      }
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            lazyLoadVideo(entry.target);
+            observer.unobserve(entry.target); // Stop observing after loading
+          }
+        });
+      },
+      { threshold: 0.5 } // Load when 50% of the video is visible
+    );
+
+    videos.forEach((video) => observer.observe(video));
+  });
+</script>
+
+
+
+
+
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+<!-- this is for revel explore -->
+ <script>
+   // Detect scroll event
+   window.addEventListener('scroll', function() {
+     let wordElement = document.getElementById('exploreWord');
+     let wordPosition = wordElement.getBoundingClientRect().top;
+
+     if (wordPosition <= window.innerHeight / 1.5) {
+       let letters = document.querySelectorAll('.letter');
+       let smiley = document.querySelector('.smiley');
+
+       // Reveal each letter one by one
+       letters.forEach((letter, index) => {
+         setTimeout(() => {
+           letter.classList.add('revealed');
+         }, index * 1); // Delay each letter by 0.2s
+       });
+
+       // Reveal smiley after letters
+       setTimeout(() => {
+         smiley.classList.add('revealed');
+       }, letters.length * 200); // Delay smiley after all letters
+     }
+   });
+ </script>
+
+
+
+
+ <script>
+
+    const textContainer = document.getElementById('textContainer');
+    const text = textContainer.innerText;
+    const lines = text.split('\n');
+    textContainer.innerHTML = ''; // Clear original text
+
+    // Wrap each letter in a span
+    lines.forEach((line, lineIndex) => {
+    const lineSpan = document.createElement('span');
+    line.split('').forEach((letter, letterIndex) => {
+    const letterSpan = document.createElement('span');
+    letterSpan.classList.add('highlight');
+    letterSpan.innerText = letter;
+    lineSpan.appendChild(letterSpan);
+    });
+    textContainer.appendChild(lineSpan);
+    textContainer.appendChild(document.createElement('br'));
+    });
+
+    window.addEventListener('scroll', () => {
+    textContainer.style.opacity = 1;
+    const letters = document.querySelectorAll('.highlight');
+    letters.forEach((letter, index) => {
+    const delay = index * 5; // Delay based on index for gradual highlighting
+    setTimeout(() => {
+    letter.style.opacity = 1;
+    }, delay);
+    });
+    });
+   </script>
+ <script>
+
+    
+
+
+
+
+
+
+
+<script>
+  const texts = ["Simple", "Secured", "Smart"];
+  let currentTextIndex = 0;
+  let currentCharIndex = 0;
+  let isDeleting = false;
+  const typingSpeed = 150;
+  const deletingSpeed = 60;
+  const delayBetweenTexts = 1000;
+  
+  function type() {
+      const typingElement = document.getElementById('typing');
+      let currentText = texts[currentTextIndex];
+      if (isDeleting) {
+          typingElement.textContent = currentText.substring(0, currentCharIndex--);
+          if (currentCharIndex < 0) {
+              isDeleting = false;
+              currentTextIndex = (currentTextIndex + 1) % texts.length;
+              setTimeout(type, typingSpeed);
+              return;
+          }
+          setTimeout(type, deletingSpeed);
+      } else {
+          typingElement.textContent = currentText.substring(0, currentCharIndex++);
+          if (currentCharIndex > currentText.length) {
+              isDeleting = true;
+              setTimeout(type, delayBetweenTexts);
+              return;
+          }
+          setTimeout(type, typingSpeed);
+      }
+  }
+
+  type();
+</script>
+
+
+
+
+<script>
+  window.addEventListener('scroll', () => {
+const navbar = document.querySelector('.navbar');
+if (window.scrollY > 50) {
+navbar.classList.add('blur');
+} else {
+navbar.classList.remove('blur');
+}
+});
+</script>
+</body>
+</html>
